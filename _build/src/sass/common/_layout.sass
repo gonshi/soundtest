@@ -1,0 +1,66 @@
+.sp
+  display: none
+
+.wrapper-sound
+  position: fixed
+  +trbl(0, 0, 0, 0)
+  padding: 1px 0
+  overflow: hidden
+
+  .msg
+    margin-top: 120px
+    font-size: 48px
+    text-align: center
+    color: #333
+  
+  .icon_container
+    position: absolute
+    width: $viewport
+    +trbl(50%, 0, auto, 0)
+    margin: 0 auto
+
+  .icon_row
+    +pie-clearfix
+
+    &:nth-child(even)
+      +translateX(15px)
+    &:nth-child(odd)
+      +translateX(-15px)
+
+  .icon
+    $width: 100px
+    float: left
+    width: $width 
+    height: $width 
+    margin: 7px 14px
+    border-radius: 50%
+    border: solid 6px #333
+
+.modal_container-sound
+  position: absolute
+  +trbl(0, 0, 0, 0)
+  background-color: rgba(0, 0, 0, 0.8)
+
+  .modal
+    position: absolute
+    +trbl(0, 0, 0, 0)
+    width: 560px
+    height: 280px
+    padding: 1px 0
+    margin: auto
+    background-color: #fff
+    border-radius: 20px
+
+  .msg
+    margin-top: 30px
+    font-size: 32px
+    text-align: center
+
+  .ok
+    width: 150px
+    height: 60px
+    line-height: 26px
+    margin: 50px auto 0
+    font-size: 32px
+    border: 2px solid #000
+    border-radius: 10px
