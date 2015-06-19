@@ -45,6 +45,8 @@ $ ->
       audio[ i ].play()
       audio[ i ].pause()
 
+    setTimeout ( -> audio[ 0 ].play() ), 5000
+
     $modal_container.velocity opacity: [ 0, 1 ], DUR, ->
       $modal_container.hide()
 
